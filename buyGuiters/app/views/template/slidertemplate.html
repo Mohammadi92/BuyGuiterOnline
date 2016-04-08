@@ -1,0 +1,24 @@
+<div class="slider">
+  <div class="slide" ng-repeat="image in images" >
+                <img class="image1" ng-show="image.visible" style="width: 100%;height: 100%;" ng-src="images/{{image.image_path}}" />
+  </div>
+      <div class="arrows_prev">
+          <a href="#/" ng-click="prev()">
+          <img src="images/left.png" style="width: 100%;height: 100%;" />
+          </a>
+      </div>
+      <div class="arrows_next">
+                <a href="#/" ng-click="next()">
+                <img src="images/right.png" style="width: 100%;height: 100%;"/>
+        </a>
+      </div>
+  <div class="btn-group-vertical">
+    <a ng-click="image1()" class="btn btn-default">Image 1</a>
+    <a ng-click="image2()" class="btn btn-default">Image 2</a>
+    <a ng-click="image3()" class="btn btn-default">Image 3</a>
+    <a ng-click="image4()" class="btn btn-default">Image 4</a>
+  </div>
+</div>
+
+
+

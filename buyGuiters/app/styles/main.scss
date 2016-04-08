@@ -1,0 +1,193 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.maincontainer{
+  width:1000px;
+margin: 20px auto;
+text-align:left;
+box-shadow: 5px 5px 5px #888888;
+padding: 10px 10px 10px 10px;
+background-color: #FBFBFB;
+border-radius: 2%;
+}
+
+.logocontainer{
+margin:10px 0 10px 0;
+height:75px;
+//border:2px solid black;
+}
+
+.logo{
+
+  height:75px;
+  width:130px;
+  background:url('../images/guitarcenter.png') no-repeat;
+  float:left;
+}
+
+.logoheader{
+  //border:2px solid black;
+float:left;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  background-color: #F0F0F0;
+  color: gray;
+
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header{
+
+}
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top:30px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 0px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+    margin: 0px -10px;
+
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+//for directive
+.slide.ng-hide-add,
+.slide.ng-hide-remove {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  //display: block!important;
+}
+.slide.ng-hide-add.ng-hide-add-active,
+.slide.ng-hide-remove {
+  opacity: 0;
+}
+.slide.ng-hide-add,
+.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
+  }
+
+
+//for page
+.slider {
+display: block;
+float:left;
+position:relative;
+width: 970px;
+height: 430px;
+}
+.slide {
+position:absolute;
+width: 970px;
+height: 430px;
+top:0;
+left:0;
+float:left;
+}
+
+
+.arrows_next {
+     position: absolute;
+    height: 100px;
+width: 50px;
+right: 0px;
+float: right;
+top: 165px;
+
+}
+.arrows_prev {
+  position:absolute;
+  height: 100px;
+width: 50px;
+top: 165px;
+  left:0;
+}
+
+.btn-group-vertical{
+  padding-left:10px;
+  padding-top:20px;
+  opacity:0.5;
+}
+
+.error{
+  color:red;
+}
